@@ -1,0 +1,41 @@
+OSPF Router with ID (1.1.1.1) (Process ID 1)
+
+        Router Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum Link count
+1.1.1.1         1.1.1.1         60          0x80000002 0x00ABCD 2
+  Link connected to: another Router (point-to-point)
+   (Link ID) Neighboring Router ID: 2.2.2.2
+   (Link Data) Router Interface address: 10.1.12.1
+  Link connected to: a Transit Network
+   (Link ID) Designated Router address: 10.1.13.3
+   (Link Data) Router Interface address: 10.1.13.1
+
+2.2.2.2         2.2.2.2         65          0x80000003 0x00EFGH 2
+  Link connected to: another Router (point-to-point)
+   (Link ID) Neighboring Router ID: 1.1.1.1
+   (Link Data) Router Interface address: 10.1.12.2
+  Link connected to: a Transit Network
+   (Link ID) Designated Router address: 10.1.24.4
+   (Link Data) Router Interface address: 10.1.24.2
+
+3.3.3.3         3.3.3.3         70          0x80000004 0x00IJKL 1
+  Link connected to: a Transit Network
+   (Link ID) Designated Router address: 10.1.13.3
+   (Link Data) Router Interface address: 10.1.13.3
+
+4.4.4.4         4.4.4.4         75          0x80000005 0x00MNOP 1
+  Link connected to: a Transit Network
+   (Link ID) Designated Router address: 10.1.24.4
+   (Link Data) Router Interface address: 10.1.24.4
+
+        Net Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+10.1.13.3       3.3.3.3         80          0x80000002 0x00QRST 2
+  Attached Router: 3.3.3.3
+  Attached Router: 1.1.1.1
+
+10.1.24.4       4.4.4.4         85          0x80000002 0x00UVWX 2
+  Attached Router: 4.4.4.4
+  Attached Router: 2.2.2.2
